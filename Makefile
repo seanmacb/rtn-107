@@ -15,7 +15,7 @@ export TEXMFHOME ?= lsst-texmf/texmf
 
 # Add aglossary.tex as a dependancy here if you want a glossary (and remove acronyms.tex)
 $(DOCNAME).pdf: $(tex) meta.tex local.bib authors.tex acronyms.tex
-	latexmk -bibtex -xelatex -f $(DOCNAME)
+#latexmk -bibtex -xelatex -f $(DOCNAME)
 #	makeglossaries $(DOCNAME)
 #	xelatex $(DOCNAME)
 # For glossary uncomment the 2 lines above
